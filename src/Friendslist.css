@@ -1,0 +1,44 @@
+.friend {
+    width:25%;
+    position:fixed;
+    top:100px;
+    right:0;
+    overflow-y: scroll;
+
+}
+
+.friendlist {
+    display:flex;
+    align-items: center;
+    padding:10px 70px;
+
+}
+
+.friendlistimg {
+    width:35px;
+    height:35px;
+    position:relative;
+}
+
+.s {
+    display:block;
+    width: 10px;
+    height: 10px;
+    background-position: green;
+    position: absolute;
+    bottom:0;
+    border-radius: 50%;
+    right: 0;
+}
+
+.friendlistimg img {
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.friendlistname {
+    margin-left:10px;
+    font-weight: 100;
+}

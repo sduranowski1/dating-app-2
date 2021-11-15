@@ -1,0 +1,89 @@
+.cardee {
+    position: relative;
+    width: 235px;
+    padding: 20px;
+    max-width: 85vw;
+    height: 30vh;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.3);
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.cardee > h1 {
+    position: fixed;
+    bottom: 10;
+    color: #f9f9f9;
+}
+
+.tCards__cardContainer {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+
+    flex-direction: column;
+}
+
+.btn {
+    color: white;
+    background-color: #adffad;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    border: none;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    border-radius: 0 0 20px 20px;
+    bottom: 0px;
+}
+
+.btn2 {
+    color: white;
+    background-color: rgb(153, 51, 110);;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    border: none;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    border-radius: 0 0 20px 20px;
+    bottom: 0px;
+}
+
+.card-title {
+    color: rgb(153, 51, 110);
+    font-size: 25px;
+    padding-left: 0px;
+
+}
+
+.card-body {
+    color: rgb(153, 51, 110);
+    font-size: 35px;
+    padding-left: 0px;
+
+}
+
+.card-text {
+    color: gray;
+    font-size: 18px;
+    padding-left: 0px;
+}
+
+.fembtn {
+    color: rgb(153, 51, 110);
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    border: none;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+}

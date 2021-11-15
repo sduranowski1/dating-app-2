@@ -1,0 +1,63 @@
+.card {
+    position: relative;
+    width: 200px;
+    padding: 20px;
+    max-width: 85vw;
+    height: 30vh;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.3);
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.card > h1 {
+    position: absolute;
+    bottom: 10;
+    color: #f9f9f9;
+}
+
+.tinderCards__cardContainer {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    justify-content: center;
+    columns: 3;
+}
+
+.paginationBttns {
+    width: 80%;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  
+  .paginationBttns a {
+    padding: 10px;
+    margin: 8px;
+    border-radius: 5px;
+    border: 2px solid rgb(153, 51, 110);
+    color: rgb(153, 51, 110);
+    cursor: pointer;
+  }
+  
+  .paginationBttns a:hover {
+    color: white;
+    background-color: rgb(153, 51, 110);
+  }
+  
+  .paginationActive a {
+    color: white;
+    background-color: rgb(153, 51, 110);
+  }
+  
+  .paginationDisabled a {
+    color: rgb(153, 51, 110);
+    background-color: rgb(153, 51, 110);
+  }

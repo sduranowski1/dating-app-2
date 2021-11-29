@@ -6,7 +6,7 @@ import Cors from 'cors'
 //app config
 const app = express();
 const port = process.env.PORT || 8003;
-const connection_url = "mongodb+srv://dating-app:<password>@cluster0.t1wjt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+const connection_url = "mongodb+srv://dating-app:dating-app@cluster0.t1wjt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 
 //middlewares
 app.use(express.json());

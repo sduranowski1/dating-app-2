@@ -35,6 +35,8 @@ const Friendslist = (props) => {
           }
       ]);
 
+      
+
 const openChat = (f) => {
     props.openChat(f);
 }      

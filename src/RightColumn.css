@@ -14,7 +14,7 @@
 
 }
 
-.cardeeright {
+.cardeeright1 {
     position: relative;
     width: 220px;
     padding: 20px;
@@ -31,7 +31,7 @@
 
 }
 
-.cardimg {
+.cardimg1 {
     width: 70px;
     height: 70px;
     left: 0;
@@ -48,18 +48,6 @@
     position: absolute;
     display: flex;
     justify-content: flex-start;
-
-    flex-direction: column;
-}
-
-.tCards__cardContainer1 {
-    position: absolute;
-    display: flex;
-    justify-content: flex-start;
-    right: 0;
-    top: 0;
-    margin-top: 80px;
-    margin-right: 15px;
 
     flex-direction: column;
 }
@@ -93,11 +81,11 @@
     bottom: 0px;
 }
 
-.card-title {
+.card-title1 {
     color: rgb(153, 51, 110);
     font-size: 25px;
     padding-left: 0px;
-    text-align: left;
+    text-align: center;
 
 }
 
@@ -105,15 +93,14 @@
     color: rgb(153, 51, 110);
     font-size: 35px;
     padding-left: 0px;
- 
 
 }
 
-.card-text {
+.card-text1 {
     color: gray;
     font-size: 18px;
-    padding-right: 5px;
-    text-align: left;
+    padding-left: 0px;
+    text-align: center;
 }
 
 .fembtn {
@@ -125,14 +112,4 @@
     justify-content: center;
     position: absolute;
     right: 0;
-}
-
-.tinderCards__cardContainerr {
-    margin: 0 auto; /* Added */
-    float: none; /* Added */
-    margin-bottom: 10px; /* Added */
-    display: grid;
-    grid-template-columns: 250px 250px 250px;
-    justify-content: left;
-    columns: 1;
 }

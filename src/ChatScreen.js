@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Avatar from "@material-ui/core/Avatar";
+import axios from './axios';
 
 import "./ChatScreen.css";
 
@@ -21,7 +22,22 @@ const ChatScreen = () => {
     {
       message: "Hi! How are you Oskar!",
     },
+
   ]);
+
+  const [people, setPeople] = useState([]);
+
+    useEffect(() => {
+        async function fetchData() {
+            const req = await axios.get('/tinder/Kacper')
+
+            setPeople(req.data)
+        }
+
+        fetchData();
+    }, []);
+
+    console.log(people)
 
   const handleSend = (e) => {
     e.preventDefault();
@@ -35,25 +51,25 @@ const ChatScreen = () => {
   return (
     <div className="chatScreen">
       <p className="chatScreen_timestamp">YOU MATCHED WITH OSCAR ON 10/08/20</p>
-      {messages.map((message) =>
-        message.name ? (
+      {people.map((person) =>
+        person.name ? (
           <div className="chatScreen_message">
             <Avatar
               className="chatScreen_image"
-              alt={message.name}
-              src={message.image}
+              alt={person.name}
+              src={person.imgUrl}
             />
-            <p className="chatScreen_text">{message.message}</p>
+            <p className="chatScreen_text">{person.message}</p>
           </div>
         ) : (
           <div className="chatScreen_message">
-            <p className="chatScreen_textUser">{message.message}</p>
+            <p className="chatScreen_textUser">{person.message}</p>
           </div>
         )
       )}
       <form className="chatScreen_input">
         <input
-          valeu={input}
+          value={input}
           onChange={(e) => setInput(e.target.value)}
           className="chatScreen_inputField"
           type="text"

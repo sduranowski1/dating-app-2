@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaVideo, FaPhone, FaRegWindowClose } from "react-icons/fa";
+import { FaRegWindowClose } from "react-icons/fa";
 import "./FbChat.css";
 
 const FbChat = (props) => {
@@ -19,12 +19,11 @@ const FbChat = (props) => {
                                 />
                             </div>
                             <div className='chhname'>
-                                {props.current.name ? props.current.name: ""}
+                                {props.current.message ? props.current.message: ""}
                             </div>
                         </div>
                         <div className='chs'>
-                            <FaVideo className="chhicons" />
-                            <FaPhone className="chhicons" />
+
                             <FaRegWindowClose 
                                 className="chhicons"
                                 onClick={closeChat} 
@@ -48,7 +47,8 @@ const FbChat = (props) => {
                         </div>
                     </div>
                     <div className="chat_footer">
-                        <inpur type="text" className="chat_input" placeholder="Aa" />
+                        <input type="text" className="chat_input" placeholder="Aa" />
+                        
                     </div>
                 </div>
             ) : (

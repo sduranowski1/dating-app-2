@@ -4,6 +4,8 @@ import { Card, CardImg, CardText, CardBody,
 
 import "./LeftCards.css"
 
+
+
 class LeftCards extends Component {
   constructor(props) {
     super(props);
